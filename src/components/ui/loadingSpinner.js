@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-const loadingSpinner = () => {
+const LoadingSpinner = () => {
   return (
-    <div>loadingSpinner</div>
-  )
-}
+    <div className="flex items-center justify-center min-h-screen">
+      <div
+        className="w-24 h-24 border-6 border-solid border-current border-b-transparent rounded-full animate-spin text-[#158080]"
+        role="status"
+      >
+        <span className="sr-only primary">Loading...</span>
+      </div>
+    </div>
+  );
+};
 
-export default loadingSpinner
+export default LoadingSpinner;
