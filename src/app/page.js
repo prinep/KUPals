@@ -1,28 +1,8 @@
 'use client';
 
-import Image from "next/image";
-
-
-
-
+import LoadingSpinner from "../components/ui/loadingSpinner";
 
 export default function Home() {
-  return (
-    
-   
-    
-   
-    
-    
-    
-    
- 
+  return <LoadingSpinner/>;
 
-  
-    
-
-    
-
-    
-  );
 }

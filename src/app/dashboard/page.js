@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const KUPalsDashboard = () => {
   const userName = 'TchuTcu'; 
@@ -38,11 +39,11 @@ const KUPalsDashboard = () => {
    
         <aside className="w-64 bg-white shadow-md p-4 flex flex-col space-y-4 border-r border-gray-200">
           <nav className="space-y-2">
-            <a href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150 ease-in-out">Dashboard</a>
-            <a href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150 ease-in-out">Groups</a>
-            <a href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150 ease-in-out">Chat</a>
-            <a href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150 ease-in-out">Profile</a>
-            <a href="#" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150 ease-in-out">Settings</a>
+            <Link href="dashboard" className="block px-3 py-2 bg-gray-100 text-[#158080] font-semibold rounded-md transition duration-150 ease-in-out">Dashboard</Link>
+            <Link href="group" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150 ease-in-out">Groups</Link>
+            <Link href="chat" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150 ease-in-out">Chat</Link>
+            <Link href="profile" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150 ease-in-out">Profile</Link>
+            <Link href="settings" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150 ease-in-out">Settings</Link>
           </nav>
           {userId && (
             <div className="mt-auto p-3 bg-gray-100 rounded-lg text-sm text-gray-600 break-words">
