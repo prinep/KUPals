@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KUPals  
+A Web-Based Social Platform for Kathmandu University Students
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+KUPals is a lightweight, web-based social platform designed specifically for students at Kathmandu University. In a university setting, students often lack a centralized platform for connecting over shared interests and organizing social and academic activities. KUPals bridges that gap by providing:
+
+- Public interest groups (e.g., art, music, hiking, coding clubs)  
+- Private groups for focused academic or social discussions  
+- Real-time chat and notifications  
+- Secure user authentication via Email/Google  
+- Responsive UI built with React and Tailwind CSS  
+- Scalable backend using Firebase services  
+
+## Features
+
+- **Public Interest Groups**: Discover and join groups based on interests  
+- **Private Collaboration Groups**: Create invite-only groups for focused discussions  
+- **Real-Time Chat & Notifications**  
+- **User Authentication & Profiles**  
+- **Privacy & Security** via Firebase Authentication and Firestore Security Rules  
+- **Responsive UI** for mobile, tablet, and desktop  
+- **Scalable Architecture** with Firebase  
+- **Easy Maintenance** with React + Firebase stack  
+
+## Technologies Used
+
+### Frontend
+
+- React.js  
+- Next.js (App Router)  
+- Tailwind CSS  
+- Context API  
+
+### Backend
+
+- Firebase Authentication  
+- Firestore  
+- Firebase Storage  
+- Firebase Hosting  
+- Firebase Cloud Functions (future use)  
+
+### Development Tools
+
+- ESLint & Prettier  
+- Jest & Firebase Emulator Suite  
+- React DevTools  
+- GitHub Actions (optional)  
+
+## Setup and Installation
+
+1. **Clone the Repository**
 
 ```bash
+git clone https://github.com/YOUR_USERNAME/KUPals.git
+cd KUPals
+
+ 2.   Install Dependencies
+
+npm install
+# or
+yarn install
+
+  3.  Set Up Firebase Project
+
+    Go to Firebase Console
+
+    Create a new Firebase project
+
+    Add a web app to the project
+
+    Copy your Firebase config object
+
+  4.  Configure Environment Variables
+
+Create a .env.local file in your project root and paste your Firebase config:
+
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=your_measurement_id
+
+5.    Configure Firebase Security Rules
+    Refer to Firebase docs to manage access control for users and groups.
+
+ 6.   Run the Development Server
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and go to:
+http://localhost:3000
+Usage
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+    Sign up or log in with Email/Google
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    Explore and join public groups
 
-## Learn More
+    Create private groups for projects or friends
 
-To learn more about Next.js, take a look at the following resources:
+    Chat in real-time with group members
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+API Routes (App Router)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    /api/add: Example route (adds two numbers)
 
-## Deploy on Vercel
+    Additional routes: Group management, messages, profile updates – integrated securely with Firebase
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  1.  Fork the repo
+
+  2.  Create a new branch:
+
+git checkout -b feature/your-feature-name
+
+ 3.   Make your changes and commit:
+
+git commit -m "feat: Add new feature"
+
+  4.  Push to your branch:
+
+git push origin feature/your-feature-name
+
+ 5.   Open a Pull Request
+
+License
+
+This project is licensed under the MIT License. See LICENSE.md for details.
