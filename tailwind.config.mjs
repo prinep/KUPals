@@ -1,22 +1,24 @@
+import animatePlugin from "tailwindcss-animate";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}"
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./public/**/*.html",
+    "./node_modules/@shadcn/ui/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      keyframes: {
-        shine: {
-          '0%': { 'background-position': '100%' },
-          '100%': { 'background-position': '-100%' },
-        },
+      colors: {
+        "navbar-dark": "#062626",
+        "signup-green": "#2ACAA8",
       },
-      animation: {
-        shine: 'shine 5s linear infinite',
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
     },
   },
-  plugins: [],
-}
+  plugins: [animatePlugin],
+};

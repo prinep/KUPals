@@ -139,3 +139,6 @@ export default SplitText;
     //   onLetterAnimationComplete={handleAnimationComplete}
     // />
    
+//     const handleAnimationComplete = () => {
+//   console.log('All letters have animated!');
+// };

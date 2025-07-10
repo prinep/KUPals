@@ -1,10 +1,17 @@
-'use client';
+import Navbar from "../components/layout/navbar"
 
-import LoadingSpinner from "../components/ui/loadingSpinner";
-import SplashCursor from "../components/landing/splashCursor";
-import LoginModule from "../components/auth/login";
+
 
 export default function Home() {
-  return <LoginModule/>;
-
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <Navbar />
+      <main className="container mx-auto px-4 py-8">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Welcome to KUPals!</h1>
+          
+        </div>
+      </main>
+    </div>
+  )
 }
