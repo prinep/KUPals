@@ -83,7 +83,7 @@ const KUPalsGroupsPage = () => {
 
           <section>
             <h2 className="text-2xl font-bold text-gray-800 mb-5 border-b-2 border-gray-200 pb-2">My Private Groups</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-600">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {privateGroups.map(group => (
                 <div key={group.id} className="bg-white rounded-lg shadow-md p-5 border border-gray-200 hover:shadow-lg transition duration-200 ease-in-out">
                   <h3 className="text-xl font-semibold text-gray-800 mb-2 truncate">{group.name}</h3>
