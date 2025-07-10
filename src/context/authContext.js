@@ -1,14 +1,16 @@
-import { useState, useEffect, createContext } from 'react';
+"use client";
+
+import { useState, useEffect, createContext } from "react";
 import {
   onAuthStateChanged,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
   GoogleAuthProvider,
-  signInWithPopup
-} from 'firebase/auth';
+  signInWithPopup,
+} from "firebase/auth";
 
-import { auth } from '../utils/firebase';
+import { auth } from "../utils/firebase";
 
 export const AuthContext = createContext();
 
@@ -52,7 +54,7 @@ export const AuthProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider value={contextValue}>
-      {!loading && children} 
+      {!loading && children}
     </AuthContext.Provider>
   );
 };
