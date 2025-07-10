@@ -60,3 +60,13 @@ export default StarBorder;
 //     },
 //   }
 // }
+
+
+    // <StarBorder
+    //       as="button"
+    //       className="custom-class"
+    //       color="cyan"
+    //       speed="2s"
+    //     >
+    //       Click Me!
+    //     </StarBorder>

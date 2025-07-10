@@ -73,3 +73,8 @@ const Magnet = ({
 };
 
 export default Magnet;
+
+
+      // <Magnet padding={50} disabled={false} magnetStrength={10}>
+      //       <p>Star React Bits on GitHub!</p>
+      //     </Magnet>

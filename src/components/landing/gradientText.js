@@ -50,3 +50,15 @@ export default function GradientText({
     </div>
   );
 }
+
+
+      // <GradientText
+      //   colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+      //   animationSpeed={3}
+      //   showBorder={false}
+      //   className="custom-class"
+      //     >
+      //     Your KU Circle Starts Here!
+      //     </GradientText>
+
+      

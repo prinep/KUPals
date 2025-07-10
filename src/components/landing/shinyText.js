@@ -29,9 +29,12 @@ export default ShinyText;
     //         },
     //       },
     //       animation: {
-    //         shine: 'shine 1s linear infinite',
+    //         shine: 'shine 5s linear infinite',
     //       },
     //     },
     //   },
     //   plugins: [],
     // };
+
+
+    //  <ShinyText text="Chat and Have Fun!" disabled={false} speed={10} className='custom-class' />

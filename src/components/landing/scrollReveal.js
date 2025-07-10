@@ -106,3 +106,13 @@ const ScrollReveal = ({
 };
 
 export default ScrollReveal;
+
+
+            // <ScrollReveal
+            //     baseOpacity={0}
+            //     enableBlur={true}
+            //     baseRotation={5}
+            //     blurStrength={10}
+            //     >
+            //     .................
+            //     </ScrollReveal>
