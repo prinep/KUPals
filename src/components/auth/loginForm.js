@@ -2,6 +2,7 @@ import React from "react";
 import Input from "../ui/input";
 import Button from "../ui/button";
 import GoogleSvg from "./googleSvg";
+import { useRouter } from "next/navigation";
 
 import { AuthContext } from "../../context/authContext";
 
@@ -9,30 +10,28 @@ import { useState, useContext } from "react";
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
 
 const loginForm = () => {
+  const router = useRouter();
+
   const [showPassword, setShowPassword] = useState(false);
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const { user, loading, signUp, signIn, signInWithGoogle, logout } =
     useContext(AuthContext);
+
   console.log(user);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Logic for creating an account (e.g., call Firebase signUp function)
     console.log("Account creation form submitted!");
-    // Implement your Firebase authentication logic here
-    // Example:
-    // try {
-    //   await signUp(email, password);
-    //   alert('Account created successfully!');
-    // } catch (error) {
-    //   alert('Error creating account: ' + error.message);
-    // }
   };
 
   const handleGoogleSignIn = async () => {
     try {
       await signInWithGoogle();
       alert("Signed in with Google successfully!");
+      router.push("/users/" + user.displayName);
     } catch (error) {
       console.error("Google sign-in error:", error.message);
       alert("Google sign-in failed: " + error.message);
